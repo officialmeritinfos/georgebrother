@@ -234,7 +234,7 @@
                 <div class="row clearfix">
                     <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                         <div class="logo-widget footer-widget">
-                            <figure class="footer-logo"><a href="index"><img src="{{asset('home/images/logo.png')}}" alt=""></a></figure>
+                            <figure class="footer-logo"><a href="{{url('/')}}"><img src="{{asset('home/images/'.$web->logo)}}" alt=""></a></figure>
                             <div class="text">
                                <p>
                                    Founded in 2006, we are a global investment agency helping individuals build their

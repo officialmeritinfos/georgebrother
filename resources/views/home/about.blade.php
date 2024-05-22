@@ -43,17 +43,19 @@
                         <div class="content-box ml_30">
                             <div class="text mb_30">
                                 <p>
+                                    Founded in 2006, we are a global investment agency helping individuals build their
+                                    financial dreams into reality. From a humble beginning, we have grown to become a notable
+                                    force in the investment industry with over 40K+ users.
+                                </p>
+                                <p>
                                     With {{$siteName}}, harness the potential of
-                                    artificial intelligence to elevate your cryptocurrency
-                                    investments, mining operations, and trading
-                                    endeavors to new
-                                    heights. Experience x10 of revenue earning in hours.
+                                    artificial intelligence to elevate your investments portfolio, mining operations, and trading
+                                    endeavors to new heights. Experience x10 of revenue earning in hours.
                                 </p>
                                 <p>
                                     {{$siteName}} is a U.K based investment company that allows investors - small and large
-                                    scale to seamlessly invest in crypto mining with guaranteed returns.
-                                    Powered by advanced artificial intelligence (AI) algorithms, {{$siteName}} provides cutting-edge
-                                    solutions to help clients earn from the dynamic world of cryptocurrencies with confidence and success.
+                                    scale to seamlessly invest and grow their wealth through advanced artificial intelligence (AI) algorithms - {{$siteName}} provides cutting-edge
+                                    solutions to help clients earn from the dynamic world of assets and real stock management.
                                     With our AI-driven investment strategies, we analyze extensive market data, historical trends,
                                     and real-time indicators to make informed investment decisions and optimize portfolio performance.
                                 </p>
