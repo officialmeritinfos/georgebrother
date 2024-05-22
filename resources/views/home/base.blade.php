@@ -215,7 +215,9 @@
             </div>
         </nav>
     </div><!-- End Mobile Menu -->
-
+    <script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+    <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#ff7e00" locale="en"></coingecko-coin-price-marquee-widget>
+    <!-- TradingView Widget END -->
 
     @yield('content')
 
