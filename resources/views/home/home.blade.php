@@ -5,6 +5,38 @@
     <section class="banner-style-two p_relative centred">
         <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
             <div class="slide-item p_relative">
+                <div class="image-layer p_absolute" style="background-image:url({{asset('home/images/banner/banner-6.jpg')}})"></div>
+                <div class="auto-container">
+                    <div class="content-box">
+                        <span>AI-integrated solution</span>
+                        <h2>Unlock the world of great financial freedom</h2>
+                        <p>
+                            Discover a world of unlimited possibilities in the realm of cryptocurrencies with<br/>
+                            {{$siteName}}. Our Artificial Intelligence system helps you earn bigger
+                        </p>
+                        <div class="btn-box">
+                            <a href="{{route('register')}}" class="theme-btn-one">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item p_relative">
+                <div class="image-layer p_absolute" style="background-image:url({{asset('home/images/banner/banner-7.jpg')}})"></div>
+                <div class="auto-container">
+                    <div class="content-box">
+                        <span>Mining & Investment</span>
+                        <h2>Automated Mining process</h2>
+                        <p>
+                            Earn from the comfort of your home with our AI powered mining plans - <br/>
+                            you invest and earn rewards on a long-term basis
+                        </p>
+                        <div class="btn-box">
+                            <a href="{{route('register')}}" class="theme-btn-one">Discover More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-item p_relative">
                 <div class="image-layer p_absolute" style="background-image:url({{asset('home/images/aicloud.jpeg')}})"></div>
                 <div class="auto-container">
                     <div class="content-box">
