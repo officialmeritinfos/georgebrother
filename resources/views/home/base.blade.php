@@ -296,21 +296,15 @@
             <div class="auto-container">
                 <div class="copyright">
                     <p>Copyright 2006 - {{date('Y')}} by <a href="{{url('/')}}">{{$siteName}}</a>. All Right Reserved.</p>
-                    <p>
+
+                </div>
+                <div class="footer-bar bg-dark text-white border-top border-color-light-white position-relative z-index-1">
+                    <div class="container">
                         <b>Risk Disclosure Privacy Policy Terms and Conditions Warning! </b>
                         Only Access your <a href="/">{{$siteName}}</a> account from the official Url
                         {{url('/')}} and subdomains! We do not use or support any Apps on IOS or Android! Beware of Scammers
                         and Phishers trying to obtain your login info! <a href="/">{{$siteName}}</a>
                         {{url('/')}}
-                    </p>
-                </div>
-                <div class="footer-bar bg-dark text-white border-top border-color-light-white position-relative z-index-1">
-                    <div class="container">
-                        <p class="p-3"><b>Disclaimer</b>: Trading forex involves substantial risk and is not suitable for everyone.
-                            We encourage you to thoroughly understand the risks involved and to consider seeking advice from
-                            an independent financial advisor before making any investment decisions.<br>
-                            Trade with knowledge. Trade with confidence. </p>
-
                     </div>
                 </div>
             </div>
