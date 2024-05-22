@@ -158,19 +158,33 @@
                                     and real-time indicators to make informed investment decisions and optimize portfolio performance.
                                 </p>
                             </div>
-                            <div class="inner-box mb_30">
-                                <div class="single-item">
+                            <div class="inner-box mb_30 row">
+                                <div class="single-item col-md-6">
                                     <div class="icon-box"><i class="icon-11"></i></div>
                                     <h3>Solution Focused</h3>
                                     <p>
                                         We offer nothing less than solution - financial freedom to our investors.
                                     </p>
                                 </div>
-                                <div class="single-item">
+                                <div class="single-item col-md-6">
                                     <div class="icon-box"><i class="icon-11"></i></div>
                                     <h3>97% Success</h3>
                                     <p>With the introduction of AI strategies in our planning scheme since 2020, we have recorded a whooping
                                         97% success rate in our investments</p>
+                                </div>
+                                <div class="single-item col-md-6">
+                                    <div class="icon-box"><i class="icon-11"></i></div>
+                                    <h3>Zero-hidden Fees</h3>
+                                    <p>
+                                        We do not charge you for what is not stated in our terms of operations - we are that transparent
+                                    </p>
+                                </div>
+                                <div class="single-item col-md-6">
+                                    <div class="icon-box"><i class="icon-11"></i></div>
+                                    <h3>Secured & Trusted</h3>
+                                    <p>
+                                        Your account is secured with high standard security level to ensure that no one gains an unauthorized access to it.
+                                    </p>
                                 </div>
                             </div>
                         </div>
