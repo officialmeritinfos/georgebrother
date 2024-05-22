@@ -268,6 +268,7 @@
                                     <li><a href="{{url('privacy')}}">Privacy Policy</a></li>
                                     <li><a href="{{url('terms')}}">Terms & Condition</a></li>
                                     <li><a href="{{url('faq')}}">Faq</a></li>
+                                    <li><a href="{{asset('home/images/certificate.pdf')}}" target="_blank">License & Certification</a></li>
                                 </ul>
                             </div>
                         </div>
