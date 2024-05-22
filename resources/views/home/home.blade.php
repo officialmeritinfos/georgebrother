@@ -226,7 +226,7 @@
                     <figure class="thumb-box"><img src="https://ui-avatars.com/api/?name=Sarah+T" alt=""></figure>
                     <div class="inner-box">
                         <h3>Sarah T</h3>
-                        <span class="designation">Silver Plan Investor</span>
+                        <span class="designation">Thrive Plan Investor</span>
                         <p>
                             {{$siteName}} is simply the best. I started out trading cryptocurrencies on Binance but
                             after so many losses, I decided to seek for a real Broker to help me;{{$siteName}} has been
@@ -245,7 +245,7 @@
                     <figure class="thumb-box"><img src="https://ui-avatars.com/api/?name=Elizabeth+T" alt=""></figure>
                     <div class="inner-box">
                         <h3>Elizabeth T</h3>
-                        <span class="designation">Basic Plan Investor</span>
+                        <span class="designation">Retirement Plan Investor</span>
                         <p>
                             Navigating the world of financial freedom has been a hectic journey for me until I met with
                             {{$siteName}}. Since then, I just relax and plan my vacation from my returns on {{$siteName}}.
