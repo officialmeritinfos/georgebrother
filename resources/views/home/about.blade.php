@@ -89,7 +89,7 @@
         <div class="auto-container">
             <div class="sec-title centred mb_50">
                 <span class="sub-title">What We Do</span>
-                <h2>Provide the Best Financial <br />investment opportunities This Industry</h2>
+                <h2>Provide the Best Financial <br />investment opportunities in the Industry</h2>
             </div>
             <div class="row clearfix">
                 @foreach($services as $service)
