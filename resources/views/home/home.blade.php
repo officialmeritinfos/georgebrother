@@ -1,6 +1,24 @@
 @extends('home.base')
 @section('content')
-
+@push('css')
+    <style>
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .embed-container iframe, .embed-container object, .embed-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+@endpush
     <!-- banner-style-two -->
     <section class="banner-style-two p_relative centred">
         <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
@@ -9,10 +27,10 @@
                 <div class="auto-container">
                     <div class="content-box">
                         <span>AI-integrated solution</span>
-                        <h2>Unlock the world of great financial freedom</h2>
+                        <h2>STANDARD FX ASSET INVESTMENTS</h2>
                         <p>
-                            Discover a world of unlimited possibilities in the realm of cryptocurrencies with<br/>
-                            {{$siteName}}. Our Artificial Intelligence system helps you earn bigger
+                            We pride ourselves in our guarantees, success and track record in the asset management and investments market.<br/>
+                            Take control with our all-in-one multiple investment packages such as Forex PAMM/MAM investment package, Cryptocurrency and more.
                         </p>
                         <div class="btn-box">
                             <a href="{{route('register')}}" class="theme-btn-one">Get Started</a>
@@ -25,10 +43,11 @@
                 <div class="auto-container">
                     <div class="content-box">
                         <span>Mining & Investment</span>
-                        <h2>Automated Mining process</h2>
+                        <h2>INVEST AND EARN WITH US</h2>
                         <p>
-                            Earn from the comfort of your home with our AI powered mining plans - <br/>
-                            you invest and earn rewards on a long-term basis
+                            Invest with confidence on world's leading asset management and investment platform.<br/>
+                            Your single point of access to professional asset investment and management solutions.<br/>
+                            Built for investors interested in stable returns and high liquidity.
                         </p>
                         <div class="btn-box">
                             <a href="{{route('register')}}" class="theme-btn-one">Discover More</a>
@@ -41,10 +60,11 @@
                 <div class="auto-container">
                     <div class="content-box">
                         <span>AI-integrated solution</span>
-                        <h2>Unlock the world of great financial freedom</h2>
+                        <h2>TRADING EXPERTISE</h2>
                         <p>
-                            Discover a world of unlimited possibilities in the realm of cryptocurrencies with<br/>
-                            {{$siteName}}. Our Artificial Intelligence system helps you earn bigger
+                            Our goal is to enhance lives by providing a safe avenue, inspired by effective and innovative <br/>
+                            solutions for investing in the different, emerging financial markets in order to improve our <br/>
+                            investors' financial situation and ultimately provide them financial freedom.
                         </p>
                         <div class="btn-box">
                             <a href="{{route('register')}}" class="theme-btn-one">Get Started</a>
@@ -188,6 +208,17 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="image_block_two">
+                        <div class="image-box mr_30">
+{{--                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5Uh720poZ8w" allowfullscreen></iframe>--}}
+
+                        </div>
+                    </div>
+                    <div class="embed-container">
+                        <iframe src="https://www.youtube.com/embed/5Uh720poZ8w" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
