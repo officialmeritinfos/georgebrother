@@ -19,7 +19,7 @@
                         <th>Current profit</th>
                         <th>Wallet</th>
                         <th>Status</th>
-{{--                        <th>Action</th>--}}
+                        <th>Action</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -46,11 +46,11 @@
                                     @break
                                 @endswitch
                             </td>
-{{--                            <td>--}}
-{{--                                <a href="{{route('invest_detail',['id'=>$investment->id])}}" class="btn btn-primary">--}}
-{{--                                    <i class="fa fa-eye"></i> View Details--}}
-{{--                                </a>--}}
-{{--                            </td>--}}
+                            <td>
+                                <a href="{{route('invest_detail',['id'=>$investment->id])}}" class="btn btn-primary">
+                                    <i class="fa fa-eye"></i> View Details
+                                </a>
+                            </td>
                         </tr>
                     @endforeach
                     </tbody>

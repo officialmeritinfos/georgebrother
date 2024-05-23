@@ -116,8 +116,8 @@
 
                 <div class="email-content">
                     <p class="report">
-                        You are to send <b>{{number_format($investment->amount,2)}} of {{$investment->asset}}</b>
-                        to the address <b style="font-size:20px;" id="address">{{$investment->wallet}}</b>.<br>
+                        You are to send <b>${{number_format($investment->amount,2)}} worth of {{$investment->asset}}</b>
+                        to the address <b style="font-size:15px;word-break: break-word;" id="address">{{$investment->wallet}}</b><br>
                         After making payment, contact support for instant crediting.<br/>
 
                         Alternatively, you can scan the Barcode above to get the wallet address:<br/>
