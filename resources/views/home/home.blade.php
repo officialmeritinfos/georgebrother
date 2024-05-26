@@ -278,7 +278,7 @@
         <div class="auto-container">
             <div class="sec-title mb_50 centred">
                 <span class="sub-title">Testimonials</span>
-                <h2>What They’re Say <br />About Us?</h2>
+                <h2>What They Say <br />About Us?</h2>
             </div>
             <div class="three-item-carousel owl-carousel owl-theme owl-dots-one owl-nav-none">
                 <div class="testimonial-block-two">
