@@ -17,6 +17,13 @@
             width: 100%;
             height: 100%;
         }
+        #videoPlayer {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Cover the entire div while maintaining aspect ratio */
+        }
+
+        /* Ensure the video player is responsive */
     </style>
 @endpush
     <!-- banner-style-two -->
@@ -210,6 +217,15 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-lg-12 mb-5">
+                    <video id="videoPlayer" controls autoplay muted loop>
+                        <source src="{{asset('video.mp4')}}" type="video/mp4">
+                        <!-- Add additional source elements for other video formats if needed -->
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
                 <div class="col-lg-12">
                     <div class="image_block_two">
                         <div class="image-box mr_30">
