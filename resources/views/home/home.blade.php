@@ -147,6 +147,24 @@
     <!-- about-style-two -->
     <section class="about-style-two sec-pad">
         <div class="auto-container">
+            <div class="row clearfix">
+
+                <div class="col-lg-12 mb-5">
+                    <video id="videoPlayer" controls autoplay>
+                        <source src="{{asset('video.mp4')}}" type="video/mp4">
+                        <!-- Add additional source elements for other video formats if needed -->
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about-style-two end -->
+
+
+    <!-- about-style-two -->
+    <section class="about-style-two sec-pad">
+        <div class="auto-container">
             <div class="sec-title centred mb_60">
                 <span class="sub-title">About {{$siteName}}</span>
                 <h2>Dedicated And Professional <br />Financial Services</h2>
@@ -218,25 +236,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-12 mb-5">
-                    <video id="videoPlayer" controls autoplay muted loop>
-                        <source src="{{asset('video.mp4')}}" type="video/mp4">
-                        <!-- Add additional source elements for other video formats if needed -->
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
 
-                <div class="col-lg-12">
-                    <div class="image_block_two">
-                        <div class="image-box mr_30">
-{{--                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5Uh720poZ8w" allowfullscreen></iframe>--}}
-
-                        </div>
-                    </div>
-                    <div class="embed-container">
-                        <iframe src="https://www.youtube.com/embed/5Uh720poZ8w" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -515,6 +515,27 @@
         </div>
     </section>
     <!-- pricing-section end -->
+
+
+    <!-- news-style-two -->
+    <section class="news-style-two sec-pad">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="col-lg-12">
+                    <div class="image_block_two">
+                        <div class="image-box mr_30">
+                            {{--                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5Uh720poZ8w" allowfullscreen></iframe>--}}
+
+                        </div>
+                    </div>
+                    <div class="embed-container">
+                        <iframe src="https://www.youtube.com/embed/5Uh720poZ8w" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- news-style-two end -->
 
 
     <!-- news-style-two -->
