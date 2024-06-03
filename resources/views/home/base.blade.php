@@ -180,7 +180,7 @@
                 <div class="site-nav-inner">
                     <!-- Logo For ONLY Mobile display Starts -->
                     <a class="logo-mobile" href="{{url('/')}}">
-                        <img id="" class="" width="150"  src="{{asset('home/images/'.$web->logo)}}" alt="logo" style="width: 100px;">
+                        <img id="" class="" width="150"  src="{{asset('home/images/'.$web->logo)}}" alt="logo" style="width: 150px;height: 100px;">
 
                     </a>
                     <!-- Logo For ONLY Mobile display Ends -->
