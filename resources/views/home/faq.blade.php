@@ -1,253 +1,164 @@
 @extends('home.base')
 @section('content')
-    @push('css')
-        <link href="{{asset('home/css/elements-css/page-title.css')}}" rel="stylesheet">
-    @endpush
-    <!-- page-title -->
-    <section class="page-title centred">
-        <div class="bg-layer" style="background-image: url({{asset('home/images/background/page-title.jpg')}});"></div>
-        <div class="auto-container">
-            <div class="content-box">
-                <h1>{{$pageName}}</h1>
-                <ul class="bread-crumb clearfix">
-                    <li><a href="{{url('/')}}">Home</a></li>
-                    <li>{{$pageName}}</li>
-                </ul>
+    <!-- Banner Area Starts -->
+    <section class="banner-area">
+        <div class="banner-overlay">
+            <div class="banner-text text-center">
+                <div class="container">
+                    <!-- Section Title Starts -->
+                    <div class="row text-center">
+                        <div class="col-xs-12">
+                            <!-- Title Starts -->
+                            <h2 class="title-head">{{$pageName}}</h2>
+                            <!-- Title Ends -->
+                            <hr>
+                            <!-- Breadcrumb Starts -->
+                            <ul class="breadcrumb">
+                                <li><a href="{{url('/')}}"> home</a></li>
+                                <li>{{$pageName}}</li>
+                            </ul>
+                            <!-- Breadcrumb Ends -->
+                        </div>
+                    </div>
+                    <!-- Section Title Ends -->
+                </div>
             </div>
         </div>
     </section>
-    <!-- page-title end -->
+    <!-- Banner Area Ends -->
 
-
-    <!-- END SECTION TEAM -->
-    <section class="promo-section ptb-100" style="margin-top: 3rem;margin-bottom: 5rem;">
+    <!-- Section FAQ Starts -->
+    <section class="faq">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-heading mb-5 text-center">
-                        <h2>Frequently Asked Questions</h2>
+                <div class="col-xs-12 col-md-12">
+                    <!-- Panel Group Starts -->
+                    <div class="panel-group" id="accordion">
+                        <!-- Panel Starts -->
+                        <div class="panel panel-default">
+                            <!-- Panel Heading Starts -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                        what is bitcoin ?</a>
+                                </h4>
+                            </div>
+                            <!-- Panel Heading Ends -->
+                            <!-- Panel Content Starts -->
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <div class="panel-body">Bitcoin is a form of digital currency which is based on an open source code that was created and is held electronically. Bitcoin is a decentralized form of currency, meaning that it does not belong to any form of government and is not controlled by anyone.</div>
+                            </div>
+                            <!-- Panel Content Starts -->
+                        </div>
+                        <!-- Panel Ends -->
+                        <!-- Panel Starts -->
+                        <div class="panel panel-default">
+                            <!-- Panel Heading Starts -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                        Who Developed Bitcoin?</a>
+                                </h4>
+                            </div>
+                            <!-- Panel Heading Ends -->
+                            <!-- Panel Content Starts -->
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <div class="panel-body">The original Bitcoin code was designed by Satoshi Nakamoto under MIT open source credentials. In 2008 Nakamoto outlined the idea behind Bitcoin in his White Paper, which scientifically described how the cryptocurrency would function. Bitcoin is the first successful digital currency designed with trust in cryptography over central authorities. Satoshi left the Bitcoin code in the hands of developers and the community in 2010. Thus far hundreds of developers have added to the core code throughout the years.</div>
+                            </div>
+                            <!-- Panel Content Starts -->
+                        </div>
+                        <!-- Panel Ends -->
+                        <!-- Panel Starts -->
+                        <div class="panel panel-default">
+                            <!-- Panel Heading Starts -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                        What is Bitcoin Mining?</a>
+                                </h4>
+                            </div>
+                            <!-- Panel Heading Ends -->
+                            <!-- Panel Content Starts -->
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">Bitcoin mining is analogous to the mining of gold, but its digital form. The process involves specialized computers solving algorithmic equations or hash functions. These problems help miners to confirm blocks of transactions held within the network. Bitcoin mining provides a reward for miners by paying out in Bitcoin in turn the miners confirm transactions on the blockchain. Miners introduce new Bitcoin into the network and also secure the system with transaction confirmation. They are also rewarded network fees for when they harvest new coin and a time when the last bitcoin is found mining will continue.</div>
+                            </div>
+                            <!-- Panel Content Starts -->
+                        </div>
+                        <!-- Panel Ends -->
+                        <!-- Panel Starts -->
+                        <div class="panel panel-default">
+                            <!-- Panel Heading Starts -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                        Is Bitcoin Used For Illegal Activities?</a>
+                                </h4>
+                            </div>
+                            <!-- Panel Heading Ends -->
+                            <!-- Panel Content Starts -->
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">This is a yet another controversial topic. Because of the freedom and the degree of anonymity that the use of Bitcoin offers, many users who were seeking to purchase or solicit illegal goods or services initially turned to the use of Bitcoin as a method of payment.</div>
+                            </div>
+                            <!-- Panel Content Starts -->
+                        </div>
+                        <!-- Panel Ends -->
+                        <!-- Panel Starts -->
+                        <div class="panel panel-default">
+                            <!-- Panel Heading Starts -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                        Can Bitcoin Be Regulated In Any Way?</a>
+                                </h4>
+                            </div>
+                            <!-- Panel Heading Ends -->
+                            <!-- Panel Content Starts -->
+                            <div id="collapse5" class="panel-collapse collapse">
+                                <div class="panel-body">Again, when a user decides to use a specific type of software for their Bitcoin wallet, they are deciding what direction the Bitcoin network is heading towards. In other words, you need the cooperation of nearly every single user in order to modify any aspect of the Bitcoin protocol.</div>
+                            </div>
+                            <!-- Panel Content Starts -->
+                        </div>
+                        <!-- Panel Ends -->
+                        <!-- Panel Starts -->
+                        <div class="panel panel-default">
+                            <!-- Panel Heading Starts -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                        Is Bitcoin anonymous?</a>
+                                </h4>
+                            </div>
+                            <!-- Panel Heading Ends -->
+                            <!-- Panel Content Starts -->
+                            <div id="collapse6" class="panel-collapse collapse">
+                                <div class="panel-body">Participants in Bitcoin transactions are identified by public addresses – those are the long strings of around 30 characters you see in a person’s Bitcoin address, usually starting with the numerals ‘1’ or ‘3’. For every transaction, the sending and receiving addresses are publicly-viewable.</div>
+                            </div>
+                            <!-- Panel Content Starts -->
+                        </div>
+                        <!-- Panel Ends -->
+                        <!-- Panel Starts -->
+                        <div class="panel panel-default">
+                            <!-- Panel Heading Starts -->
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                                        How Can I Sell Bitcoins?</a>
+                                </h4>
+                            </div>
+                            <!-- Panel Heading Ends -->
+                            <!-- Panel Content Starts -->
+                            <div id="collapse7" class="panel-collapse collapse">
+                                <div class="panel-body">Bitcoins can be sold locally using LocalBitcoins, on Bitcoin brokerages / exchanges, using two-way Bitcoin Teller Machines (BTM’s) or you can pay for a good or service with them. Bitcoins can be sold to just about anyone as long as they have a Bitcoin address, and can be sold for any fiat currency in the world or traded for a physical good. Feel free to check out our recommended list of exchanges and brokerage services to sell your bitcoins online.</div>
+                            </div>
+                            <!-- Panel Content Starts -->
+                        </div>
+                        <!-- Panel Ends -->
                     </div>
+                    <!-- Panel Group Ends -->
                 </div>
             </div>
-            <!--pricing faq start-->
-            <div class="row">
-
-
-                <div class="col-lg-6">
-
-                    <div id="accordion-1" class="accordion accordion-faq">
-                        <!-- Accordion card 1 -->
-                        <div class="card">
-                            <div class="card-header py-4" id="heading-1-1" data-bs-toggle="collapse" role="button"
-                                 data-bs-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
-                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> What is {{$siteName}}?</h6>
-                            </div>
-                            <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1"
-                                 data-parent="#accordion-1">
-                                <div class="card-body">
-                                    <p>{{$siteName}} our company provides a full investment service focused on the bitcoin and cryptocurrency market We are among the best platforms to invest and grow your bitcoin and other cryptocurrency</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordion card 3 -->
-
-                    </div>
-
-                    <div id="accordion-1" class="accordion accordion-faq">
-                        <!-- Accordion card 1 -->
-                        <div class="card">
-                            <div class="card-header py-4" id="heading-1-2" data-bs-toggle="collapse" role="button"
-                                 data-bs-target="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
-                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> How do I create my account?</h6>
-                            </div>
-                            <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2"
-                                 data-parent="#accordion-1">
-                                <div class="card-body">
-                                    <p>Registration process is very easy and will take a few moments to complete Simply click CREATE ACCOUNT button  and fill in all the required fields</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordion card 3 -->
-
-                    </div>
-
-                    <div id="accordion-1" class="accordion accordion-faq">
-                        <!-- Accordion card 1 -->
-                        <div class="card">
-                            <div class="card-header py-4" id="heading-1-3" data-bs-toggle="collapse" role="button"
-                                 data-bs-target="#collapse-1-3" aria-expanded="false" aria-controls="collapse-1-3">
-                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> How do I make a deposit?</h6>
-                            </div>
-                            <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3"
-                                 data-parent="#accordion-1">
-                                <div class="card-body">
-                                    <p>
-                                        To deposit funds in your trading account is quick and simple. For your
-                                        convenience you may choose one of the several available deposit methods.
-                                        To make a successful deposit please follow the steps below:<br>
-                                        <ul>
-                                            <li>Login to your account Click on the New Investment button in the
-                                                DASHBOARD section.<br>
-                                            </li>
-
-                                            <li>Choose the deposit option And fill the form including the amount and
-                                                the package.
-                                            </li>
-                                            <li>
-                                                You will receive the wallet address to make payment to on the next page.
-                                                After payment, contact support.
-                                            </li>
-                                            <li>
-                                                Once your deposit has been confirmed, the status of the investment will change
-                                                to <span class="text-primary">Ongoing</span> which means that it has been confirmed
-                                                and your investment started.
-                                            </li>
-                                        </ul>
-
-
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordion card 3 -->
-
-                    </div>
-
-                    <div id="accordion-1" class="accordion accordion-faq">
-                        <!-- Accordion card 1 -->
-                        <div class="card">
-                            <div class="card-header py-4" id="heading-1-4" data-bs-toggle="collapse" role="button"
-                                 data-bs-target="#collapse-1-4" aria-expanded="false" aria-controls="collapse-1-4">
-                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> How long does my deposit take before it can reflect on my {{$siteName}} account dashboard?</h6>
-                            </div>
-                            <div id="collapse-1-4" class="collapse" aria-labelledby="heading-1-4"
-                                 data-parent="#accordion-1">
-                                <div class="card-body">
-                                    <p>Your deposit will be reflected immediately once it is confirmed on the blockchain network</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordion card 3 -->
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-6">
-
-                    <div id="accordion-2" class="accordion accordion-faq">
-                        <!-- Accordion card 1 -->
-                        <div class="card">
-                            <div class="card-header py-4" id="heading-1-5" data-bs-toggle="collapse" role="button"
-                                 data-bs-target="#collapse-2-5" aria-expanded="false" aria-controls="collapse-2-5">
-                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> How do I make a withdrawal?</h6>
-                            </div>
-                            <div id="collapse-2-5" class="collapse" aria-labelledby="heading-2-5"
-                                 data-parent="#accordion-2">
-                                <div class="card-body">
-                                    <p>To make a withdrawal request click the WITHDRAW button at the top center of your {{$siteName}} account dashboard and input the required details to withdraw</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordion card 3 -->
-
-                    </div>
-
-                    <div id="accordion-2" class="accordion accordion-faq">
-                        <!-- Accordion card 1 -->
-                        <div class="card">
-                            <div class="card-header py-4" id="heading-1-6" data-bs-toggle="collapse" role="button"
-                                 data-bs-target="#collapse-2-6" aria-expanded="false" aria-controls="collapse-2-6">
-                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> How long does it take to process my withdrawal?</h6>
-                            </div>
-                            <div id="collapse-2-6" class="collapse" aria-labelledby="heading-2-6"
-                                 data-parent="#accordion-2">
-                                <div class="card-body">
-                                    <p>Once we receive your withdrawal request we process immediately and send to your bitcoin wallet</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordion card 3 -->
-
-                    </div>
-
-                    <div id="accordion-2" class="accordion accordion-faq">
-                        <!-- Accordion card 1 -->
-                        <div class="card">
-                            <div class="card-header py-4" id="heading-1-7" data-bs-toggle="collapse" role="button"
-                                 data-bs-target="#collapse-2-7" aria-expanded="false" aria-controls="collapse-2-7">
-                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> Can I have more than one account?</h6>
-                            </div>
-                            <div id="collapse-2-7" class="collapse" aria-labelledby="heading-2-7"
-                                 data-parent="#accordion-2">
-                                <div class="card-body">
-                                    <p>No you cannot have more than one account only investors on the vip plan are allowed to do so</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordion card 3 -->
-
-                    </div>
-
-                    <div id="accordion-2" class="accordion accordion-faq">
-                        <!-- Accordion card 1 -->
-                        <div class="card">
-                            <div class="card-header py-4" id="heading-1-8" data-bs-toggle="collapse" role="button"
-                                 data-bs-target="#collapse-2-8" aria-expanded="false" aria-controls="collapse-2-8">
-                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> Is this company properly registered?</h6>
-                            </div>
-                            <div id="collapse-2-8" class="collapse" aria-labelledby="heading-2-8"
-                                 data-parent="#accordion-2">
-                                <div class="card-body">
-                                    <p>Yes we are officially and properly registered with the United State . our company registration number is USFDAISO34847676   and registered with the name {{$siteName}}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordion card 3 -->
-
-                    </div>
-
-                    <div id="accordion-2" class="accordion accordion-faq">
-                        <!-- Accordion card 1 -->
-                        <div class="card">
-                            <div class="card-header py-4" id="heading-1-9" data-bs-toggle="collapse" role="button"
-                                 data-bs-target="#collapse-2-9" aria-expanded="false" aria-controls="collapse-2-9">
-                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> Can I have more than two accounts?</h6>
-                            </div>
-                            <div id="collapse-2-9" class="collapse" aria-labelledby="heading-2-9"
-                                 data-parent="#accordion-2">
-                                <div class="card-body">
-                                    <p>We do not allow multiple accounts except only for our investors on the VIP plan</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordion card 3 -->
-
-                    </div>
-
-                    <div id="accordion-2" class="accordion accordion-faq">
-                        <!-- Accordion card 1 -->
-                        <div class="card">
-                            <div class="card-header py-4" id="heading-1-10" data-bs-toggle="collapse" role="button"
-                                 data-bs-target="#collapse-2-10" aria-expanded="false" aria-controls="collapse-2-10">
-                                <h6 class="mb-0"><span class="ti-receipt mr-3"></span> how many times can i make a deposit?</h6>
-                            </div>
-                            <div id="collapse-2-10" class="collapse" aria-labelledby="heading-2-10"
-                                 data-parent="#accordion-2">
-                                <div class="card-body">
-                                    <p>You can make as many deposit as you want on any of our investment plans except theHERCULES ARBITRAGE PLAN where you can only invest two times. And you can only withdraw once in the HERCULES ARBITRAGE PLAN.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Accordion card 3 -->
-
-                    </div>
-
-                </div>
-
-            </div>
-            <!--pricing faq end-->
         </div>
-    </section><!-- END SECTION FAQ -->
+    </section>
+    <!-- Section FAQ Ends -->
 
 @endsection

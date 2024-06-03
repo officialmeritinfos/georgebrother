@@ -1,56 +1,95 @@
 @extends('home.base')
 @section('content')
-    @push('css')
-        <link href="{{asset('home/css/elements-css/page-title.css')}}" rel="stylesheet">
-    @endpush
-    <!-- page-title -->
-    <section class="page-title centred">
-        <div class="bg-layer" style="background-image: url({{asset('home/images/background/page-title.jpg')}});"></div>
-        <div class="auto-container">
-            <div class="content-box">
-                <h1>{{$pageName}}</h1>
-                <ul class="bread-crumb clearfix">
-                    <li><a href="{{url('/')}}">Home</a></li>
-                    <li>{{$pageName}}</li>
-                </ul>
+    <!-- Banner Area Starts -->
+    <section class="banner-area">
+        <div class="banner-overlay">
+            <div class="banner-text text-center">
+                <div class="container">
+                    <!-- Section Title Starts -->
+                    <div class="row text-center">
+                        <div class="col-xs-12">
+                            <!-- Title Starts -->
+                            <h2 class="title-head">{{$pageName}}</h2>
+                            <!-- Title Ends -->
+                            <hr>
+                            <!-- Breadcrumb Starts -->
+                            <ul class="breadcrumb">
+                                <li><a href="{{url('/')}}"> home</a></li>
+                                <li>{{$pageName}}</li>
+                            </ul>
+                            <!-- Breadcrumb Ends -->
+                        </div>
+                    </div>
+                    <!-- Section Title Ends -->
+                </div>
             </div>
         </div>
     </section>
-    <!-- page-title end -->
+    <!-- Banner Area Ends -->
 
-    <!-- Business One -->
-    <section class="business-one style-five" style="background-image:url(home/images/background/pattern-39.png)">
-        <div class="auto-container">
-            <!-- Business One Lower Section -->
-            <div class="business-one_lower-section text-center" style="margin-top: 10rem;">
-                <h6>Main Details:</h6>
-                <div class="row clearfix">
-                    <!-- Branch Column -->
-                    <div class="branch-column col-lg-4 col-md-6 col-sm-12 mx-auto">
-                        <div class="branch-column_inner">
-                            <div class="branch-name"> (Head Office)</div>
-                            <ul class="branch-info_list">
-                                <li>{!! $web->address !!}
-                                </li>
-                                <li><a href="tel:"></a> </li>
-                                <li><a href="mailto:{{$web->email}}">{{$web->email}}</a></li>
-                            </ul>
+    <!-- Contact Section Starts -->
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8 contact-form">
+                    <h3 class="col-xs-12">feel free to drop us a message</h3>
+                    <p class="col-xs-12">Need to speak to us? Do you have any queries or suggestions? Please contact us about all enquiries.</p>
+                    <!-- Contact Form Starts -->
+
+                <!-- Contact Widget Starts -->
+                <div class="col-xs-12 col-md-4">
+                    <div class="widget">
+                        <div class="contact-page-info">
+                            <!-- Contact Info Box Starts -->
+                            <div class="contact-info-box">
+                                <i class="fa fa-home big-icon"></i>
+                                <div class="contact-info-box-content">
+                                    <h4>Address</h4>
+                                    <p>{!! $web->address !!}</p>
+                                </div>
+                            </div>
+                            <!-- Contact Info Box Ends -->
+                            <!-- Contact Info Box Starts -->
+                            <div class="contact-info-box">
+                                <i class="fa fa-phone big-icon"></i>
+                                <div class="contact-info-box-content">
+                                    <h4>Phone </h4>
+                                    <p>{{$web->phone}}<br></p>
+                                </div>
+                            </div>
+                            <!-- Contact Info Box Ends -->
+                            <!-- Contact Info Box Starts -->
+                            <div class="contact-info-box">
+                                <i class="fa fa-envelope big-icon"></i>
+                                <div class="contact-info-box-content">
+                                    <h4>Email </h4>
+
+                                    <p>{{$web->email}}<br><!-- bestcryptotradeinvestment90@gmail.com --></p>
+                                </div>
+                            </div>
+                            <!-- Contact Info Box Ends -->
+                            <!-- Social Media Icons Starts -->
+                            <div class="contact-info-box">
+                                <i class="fa fa-share-alt big-icon"></i>
+                                <div class="contact-info-box-content">
+                                    <h4>Social Profiles</h4>
+                                    <div class="social-contact">
+                                        <ul>
+                                            <li class="facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                            <li class="twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#" target="_blank"><i class="fa fa-telegram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Social Media Icons Starts -->
                         </div>
                     </div>
                 </div>
+                <!-- Contact Widget Ends -->
             </div>
-
         </div>
     </section>
-    <!-- End Business One -->
-
-    <!-- Map One -->
-    <section class="map-one">
-        <div class="map-outer">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805184.6331292129!2d144.49266890254142!3d-37.97123689954809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1574408946759!5m2!1sen!2s" allowfullscreen=""></iframe>
-        </div>
-    </section>
-    <!-- End Map One -->
-
+    <!-- Contact Section Ends -->
 
 @endsection
